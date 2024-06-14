@@ -6,6 +6,7 @@ h2 {
     font-family: "Merriweather", serif;
 }
 
+<<<<<<< HEAD
 header h5 {
     color: #F87932;
 }
@@ -44,6 +45,35 @@ header {
     box-shadow: 0 0 20px 12px rgba(226, 226, 226, 0.281);
     padding-top: 40px;
     height: 100px;
+=======
+.nav-link {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 0.75rem 0.75rem;
+    text-align: center;
+    gap: 15px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+.nav-link h4 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.navbar {
+    padding-top: 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    gap: 45px;
+>>>>>>> 7db0075daa6db14e528e3e466d7e1aeb5d551c90
 }
 
 .booktrip {
@@ -63,6 +93,7 @@ header {
     padding: 0 1rem;
 }
 
+<<<<<<< HEAD
 .rhomb {
     transform: rotate(45deg);
     margin: 50px;
@@ -95,6 +126,49 @@ header {
 .rhomb:nth-child(2) img {
     width: auto;
     height: 400px;
+=======
+.adventure .right .rhomb:nth-of-type(1) {
+    overflow: hidden;
+    --size: 300px;
+    position: absolute;
+    left: 65%;
+    top: 66%;
+    margin-top: calc(var(--size) / 2* -1);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+.adventure .right .rhomb:nth-of-type(2) {
+    overflow: hidden;
+    --size: 250px;
+    position: absolute;
+    left: 55%;
+    top: 71%;
+    margin-top: calc(var(--size) / 2* -1);
+    border: 20px solid #ffffff;
+
+}
+
+.adventure .right .rhomb>* {
+    --scale: 2.1;
+    transform: rotate(calc(-45deg* var(--direction))) scale(var(--scale));
+    max-width: 100%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+.adventure .right .rhomb {
+    --size: 0px;
+    --direction: 1;
+    height: var(--size);
+    width: var(--size);
+    transform: rotate(calc(45deg* var(--direction)));
+    overflow: hidden;
+
+}
+
+.adventure .right {
+    display: flex;
+    justify-content: start;
+>>>>>>> 7db0075daa6db14e528e3e466d7e1aeb5d551c90
 }
 
 .adventure h3 {
@@ -143,7 +217,10 @@ header {
 
 .adventure .container {
     padding-top: 300px;
+<<<<<<< HEAD
     position: relative;
+=======
+>>>>>>> 7db0075daa6db14e528e3e466d7e1aeb5d551c90
 }
 
 .adventure .container .maintext {
@@ -151,10 +228,17 @@ header {
     line-height: 30px;
     font-weight: 400;
     letter-spacing: 4px;
+<<<<<<< HEAD
     margin-bottom: 200px;
 }
 
 .adventure .container .btn-lg {
+=======
+    margin-bottom: 170px;
+}
+
+.adventure .container. .btn-lg {
+>>>>>>> 7db0075daa6db14e528e3e466d7e1aeb5d551c90
     margin-top: 20px;
 }
 
@@ -197,6 +281,7 @@ header {
     width: 100%;
 }
 
+<<<<<<< HEAD
 .adventure .container .col-6 {
     /* background: url(../img/Route.png); */
     --width: min(100vw, 770px);
@@ -441,4 +526,10 @@ header {
         width: auto;
         height: 155px;
     }
+=======
+.adventure .container .way {
+    position: relative;
+    top: -767px;
+    left: -169px;
+>>>>>>> 7db0075daa6db14e528e3e466d7e1aeb5d551c90
 }
