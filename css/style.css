@@ -6,33 +6,44 @@ h2 {
     font-family: "Merriweather", serif;
 }
 
-.nav-link {
-    background-color: rgb(255, 255, 255);
-    border-radius: 0px 0px 0.75rem 0.75rem;
-    text-align: center;
-    gap: 15px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+header h5 {
+    color: #F87932;
 }
 
-.nav-link h4 {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: 5px;
-    font-size: 20px;
+header {
+    background: url(../img/background.jpg);
 }
 
-.navbar {
+.navbar-expand-lg {
     padding-top: 0;
+    padding-bottom: 20px;
 }
-
-.navbar .container {
-    display: flex;
+.navbar-expand-lg .navbar-collapse {
     justify-content: center;
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
 }
 
 .nav {
-    gap: 45px;
+    gap: 40px;
+}
+
+.nav-link {
+    height: 48px;
+    letter-spacing: 5px;
+    text-align: center;
+    background-color: #ffffffb7;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: height 1s ease-in-out, padding-top 1s ease-in-out;
+}
+
+.nav-link:hover {
+    box-shadow: 0 0 20px 12px rgba(226, 226, 226, 0.281);
+    padding-top: 40px;
+    height: 100px;
 }
 
 .booktrip {
@@ -52,47 +63,38 @@ h2 {
     padding: 0 1rem;
 }
 
-.adventure .right .rhomb:nth-of-type(1) {
+.rhomb {
+    transform: rotate(45deg);
+    margin: 50px;
+    height: 300px;
+    width: 300px;
     overflow: hidden;
-    --size: 300px;
-    position: absolute;
-    left: 65%;
-    top: 66%;
-    margin-top: calc(var(--size) / 2* -1);
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
-}
-
-.adventure .right .rhomb:nth-of-type(2) {
-    overflow: hidden;
-    --size: 250px;
-    position: absolute;
-    left: 55%;
-    top: 71%;
-    margin-top: calc(var(--size) / 2* -1);
-    border: 20px solid #ffffff;
 
 }
 
-.adventure .right .rhomb>* {
-    --scale: 2.1;
-    transform: rotate(calc(-45deg* var(--direction))) scale(var(--scale));
+.rhomb img {
     max-width: 100%;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+    transform: rotate(-45deg) scale(1.42);
 }
 
-.adventure .right .rhomb {
-    --size: 0px;
-    --direction: 1;
-    height: var(--size);
-    width: var(--size);
-    transform: rotate(calc(45deg* var(--direction)));
+.rhomb:nth-child(1) {
+    border: 20px solid #fff;
+}
+
+.rhomb:nth-child(2) {
+    width: 380px;
+    height: 350px;
+    position: relative;
+    bottom: 350px;
+    left: 150px;
     overflow: hidden;
-
+    z-index: -1;
+    object-fit: cover;
 }
 
-.adventure .right {
-    display: flex;
-    justify-content: start;
+.rhomb:nth-child(2) img {
+    width: auto;
+    height: 400px;
 }
 
 .adventure h3 {
@@ -141,6 +143,7 @@ h2 {
 
 .adventure .container {
     padding-top: 300px;
+    position: relative;
 }
 
 .adventure .container .maintext {
@@ -148,10 +151,10 @@ h2 {
     line-height: 30px;
     font-weight: 400;
     letter-spacing: 4px;
-    margin-bottom: 170px;
+    margin-bottom: 200px;
 }
 
-.adventure .container. .btn-lg {
+.adventure .container .btn-lg {
     margin-top: 20px;
 }
 
@@ -194,8 +197,248 @@ h2 {
     width: 100%;
 }
 
-.adventure .container .way {
-    position: relative;
-    top: -767px;
-    left: -169px;
+.adventure .container .col-6 {
+    /* background: url(../img/Route.png); */
+    --width: min(100vw, 770px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: calc(var(--width) / 5.5);
+    max-width: var(--width);
+    height: 638px;
+    background-size: cover;
+    background-position: top left;
+
+}
+
+.route {
+    transform: scale(0.6);
+    position: absolute;
+    top: -68px;
+    right: 391px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .rhomb {
+        width: 220px;
+        height: 220px;
+    }
+
+    .rhomb img {
+        max-width: 100%;
+        transform: rotate(-45deg) scale(1.42);
+    }
+
+    .rhomb:nth-child(1) {
+        border: 20px solid #fff;
+    }
+
+    .rhomb:nth-child(2) {
+        width: 220px;
+        height: 220px;
+        position: relative;
+        bottom: 300px;
+        left: 150px;
+        overflow: hidden;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .rhomb:nth-child(2) img {
+        width: auto;
+        height: 250px;
+    }
+
+    .route {
+        transform: scale(0.6);
+        top: 63px;
+        right: 282px;
+    }
+
+    .adventure .container .maintext {
+        font-size: 16px;
+        margin-bottom: 150px;
+    }
+
+    .adventure .container .podtitle {
+        font-size: 40px;
+    }
+
+    .adventure .container .title {
+        font-size: 20px;
+    }
+
+    .adventure {
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .route {
+        transform: scale(1);
+        top: 129px;
+        right: -6px;
+    }
+
+    .col-lg-6 {
+        text-align: center;
+    }
+
+    .rhomb:nth-child(1) {
+        border: 20px solid #fff;
+        position: relative;
+        left: 250px;
+        bottom: 50px;
+    }
+
+
+    .rhomb:nth-child(2) {
+        width: 220px;
+        height: 220px;
+        position: relative;
+        bottom: 350px;
+        left: 400px;
+    }
+
+    .dam {
+        height: 0;
+    }
+
+    .adventure {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .route {
+        display: none;
+    }
+
+    .routemin {
+        position: absolute;
+        top: 250px;
+        left: -5px;
+        transform: scale(1.1);
+    }
+
+    .adventure .container .podtitle {
+        margin-bottom: 0px !important;
+    }
+
+    .adventure .container .maintext {
+        font-size: 14px;
+        margin-bottom: 502px;
+    }
+
+    .adventure .container .title {
+        font-size: 16px;
+    }
+
+    .rhomb:nth-child(2) {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        bottom: 459px;
+        left: 309px;
+    }
+
+    .rhomb:nth-child(1) {
+        border: 0px;
+        position: relative;
+        left: -85px;
+        bottom: 489px;
+    }
+
+    .rhomb img {
+        max-width: 100%;
+        transform: rotate(-45deg) scale(1.62);
+    }
+
+    .rhomb {
+        width: 160px;
+        height: 160px;
+    }
+
+    .rhomb:nth-child(2) img {
+        width: auto;
+        height: 200px;
+    }
+
+    .dam {
+        height: 0;
+    }
+
+    .adventure {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container{
+        overflow: hidden;
+    }
+    .adventure .container .maintext {
+        font-size: 10px;
+        margin-bottom: 162px;
+        letter-spacing: 2px;
+        line-height: 15px;
+    }
+
+    .rhomb {
+        width: 100px;
+        height: 100px;
+    }
+
+    .routemin {
+        top: 229px;
+        left: -5px;
+        transform: scale(1);
+    }
+
+    .adventure .container .podtitle {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 20px !important;
+    }
+
+    .adventure .container .title {
+        font-size: 12px;
+    }
+
+    .adventure a {
+        width: 129px;
+        height: 45px;
+        background-color: none;
+        font-size: 13px;
+        font-weight: 600;
+        border: 1px solid;
+    }
+
+    .rhomb:nth-child(1) {
+        border: 0px;
+        position: relative;
+        left: -100px;
+        bottom: 256px;
+    }
+
+    .rhomb:nth-child(2) {
+        width: 115px;
+        height: 115px;
+        position: relative;
+        bottom: 312px;
+        left: 148px;
+    }
+
+    .rhomb:nth-child(2) img {
+        width: auto;
+        height: 155px;
+    }
 }
