@@ -271,7 +271,7 @@ header {
     margin-top: 20px;
 }
 
-.adventure a {
+.adventure .knopka {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,11 +286,11 @@ header {
     transition: .4s;
 }
 
-.adventure a:hover {
+.adventure .knopka:hover {
     background-color: #f87b3200;
 }
 
-.adventure a::before {
+.adventure .knopka::before {
     content: "";
     display: block;
     background: #F87932;
@@ -683,7 +683,7 @@ svg {
     background-image: url(../img/photoblock6.png);
 }
 
-.blog a {
+.blog .knopka {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -699,11 +699,11 @@ svg {
     margin-top: 20px;
 }
 
-.blog a:hover {
+.blog .knopka:hover {
     background-color: #f87b3200;
 }
 
-.blog a::before {
+.blog .knopka::before {
     content: "";
     display: block;
     background: #F87932;
@@ -789,37 +789,7 @@ svg {
     padding-bottom: 60px;
 }
 
-.roadmap a {
-    display: flex;
-    font-family: "Lato", sans-serif;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
-    height: 62px;
-    background-color: #F87932;
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
-    border: none;
-    border-radius: 0;
-    position: relative;
-    transition: .4s;
-    letter-spacing: 5px;
-    margin-top: 50px;
-}
 
-.roadmap a:hover {
-    background-color: #f87b3200;
-}
-
-.roadmap a::before {
-    content: "";
-    display: block;
-    background: #F87932;
-    position: absolute;
-    z-index: -1;
-    transition: .4s;
-}
 
 .orng-btn {
     border-color: #f87932;
@@ -1724,7 +1694,7 @@ footer .container p {
         --gap: 5px;
     }
 
-    .blog a {
+    .blog .knopka {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1815,7 +1785,7 @@ footer .container p {
         font-size: 12px;
     }
 
-    .adventure a {
+    .adventure .knopka {
         width: 129px;
         height: 45px;
         background-color: none;
