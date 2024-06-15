@@ -133,10 +133,6 @@ header {
     color: #333333;
 }
 
-.adventure {
-    margin-bottom: 300px;
-}
-
 .adventure .container .title {
     font-size: 24px;
     line-height: 36px;
@@ -451,10 +447,175 @@ svg {
     transition: .4s;
 }
 
+.roadmap {
+    padding: 150px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg-road.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.roadmap .container h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 66px;
+    color: #FFFFFF;
+}
+
+.roadmap .container p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 5px;
+    color: #EEEEEE;
+    width: 61%;
+}
+
+.roadmap .container .leftsite h2 {
+    color: #39BFA7;
+    font-size: 60px;
+    text-align: right;
+    line-height: 72px;
+    font-weight: 400;
+    font-family: "Sedgwick Ave", cursive;
+}
+
+.roadmap .container .rightsite .row {
+    display: flex;
+}
+
+.roadmap .container .rightsite .number p {
+    font-size: 80px;
+    line-height: 96px;
+    font-weight: 400;
+    color: white;
+    font-family: "Sedgwick Ave", cursive;
+    margin-bottom: 0px;
+}
+
+.roadmap .container .rightsite .itd .month {
+    font-size: 23px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #969696;
+    font-family: "Sedgwick Ave", cursive;
+    font-style: normal;
+    margin-bottom: 0px;
+}
+
+.roadmap .container .rightsite .itd .title {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 900;
+    width: 100%;
+    font-family: "Merriweather", serif;
+    margin-bottom: 0px;
+}
+
+.roadmap .container {
+    border: 5px solid white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.roadmap a {
+    display: flex;
+    font-family: "Lato", sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 62px;
+    background-color: #F87932;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    transition: .4s;
+    letter-spacing: 5px;
+    margin-top: 50px;
+}
+
+.roadmap a:hover {
+    background-color: #f87b3200;
+}
+
+.roadmap a::before {
+    content: "";
+    display: block;
+    background: #F87932;
+    position: absolute;
+    z-index: -1;
+    transition: .4s;
+}
+
+.orng-btn {
+    border-color: #f87932;
+    background-color: #f87932;
+    color: #ffffff;
+    box-shadow: 1px 4px 15px 1px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    position: relative;
+    transition: .2s;
+    z-index: 1;
+}
+
+.orng-btn,
+.trn-btn {
+    border-style: solid;
+    border-width: 2px;
+    font-family: 'Lato';
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.orng-btn:hover .in-btn {
+    right: 230px;
+    transition: .4s;
+}
+
+.orng-btn:hover {
+    box-shadow: 1px 3px 10px 1px #ffffffaf;
+    transition: .4s;
+}
+
+.in-btn {
+    z-index: -1;
+    position: absolute;
+    top: -30px;
+    right: -90px;
+    width: 70px;
+    height: 150px;
+    background-color: var(--clr-turquoise);
+    transform: rotate(30deg);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+
+.gap-5 {
+    gap: 2rem !important;
+}
+
+.roadmap .text-center {
+    margin-top: 0px;
+}
+
 @media (max-width: 1200px) {
     :root {
         --wandh-img: 230px;
     }
+
     .blog h3 {
         font-family: 'Montserrat';
         font-weight: 800;
@@ -521,11 +682,53 @@ svg {
     .adventure {
         margin-bottom: 150px;
     }
+
+    .roadmap .container p {
+        font-size: 14px;
+        width: 81%;
+    }
+
+    .roadmap .container .leftsite h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .roadmap .container .rightsite .number p {
+        font-size: 80px;
+        line-height: 96px;
+        font-weight: 400;
+        color: white;
+        font-family: "Sedgwick Ave", cursive;
+        margin-bottom: 0px;
+    }
+
+    .roadmap .container .rightsite .itd .title {
+        font-size: 26px;
+        line-height: 32px;
+        font-weight: 900;
+        width: 100%;
+        font-family: "Merriweather", serif;
+        margin-bottom: 0px;
+        letter-spacing: 0px;
+    }
+
+    .roadmap .container .rightsite .itd .month {
+        font-size: 18px;
+    }
+
+    .orng-btn,
+    .trn-btn {
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 992px) {
     :root {
         --wandh-img: 160px;
+    }
+
+    .videosec {
+        margin-top: 250px;
     }
 
     .route {
@@ -561,11 +764,34 @@ svg {
     .adventure {
         margin-bottom: 100px;
     }
+
+    .roadmap .container .rightsite .itd .title {
+        font-size: 31px;
+    }
+
+    .roadmap .container .rightsite .itd .month {
+        text-align: left;
+    }
+
+    .roadmap .container .rightsite .number p {
+        font-size: 65px;
+    }
+    .roadmap .container p {
+        font-size: 12px;
+        width: 100%;
+    }
+    .roadmap .container h2 {
+        font-size: 55px;
+    }
 }
 
 @media (max-width: 768px) {
     :root {
         --gap: 10px;
+    }
+
+    .videosec {
+        margin-top: 0px;
     }
 
     .photo-grid {
@@ -668,6 +894,19 @@ svg {
     .adventure {
         margin-bottom: 100px;
     }
+    .roadmap .container h2 {
+        font-size: 30px;
+    }
+    .roadmap {
+        padding: 70px;
+    }
+    .roadmap .container .rightsite .itd .title {
+        font-size: 28px;
+    }
+    .roadmap .container .rightsite .number p {
+        font-size: 55px;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -797,8 +1036,8 @@ svg {
     }
 
     .rhomb:nth-child(2) {
-        width: 115px;
-        height: 115px;
+        width: 90px;
+        height: 90px;
         position: relative;
         bottom: 312px;
         left: 148px;
@@ -808,4 +1047,45 @@ svg {
         width: auto;
         height: 155px;
     }
+    .roadmap {
+        padding: 25px;
+    }
+    .highway .container p {
+        font-size: 12px;
+        width: 124%;
+        line-height: 12px;
+    }
+    .roadmap .container h2 {
+        font-size: 29px;
+        font-weight: 700;
+    }
+    .roadmap .container .leftsite h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .roadmap .container .rightsite .number p {
+        font-size: 40px;
+    }
+    .roadmap .container .rightsite .itd .month {
+        font-size: 14px;
+    }
+    .roadmap .container .rightsite .itd .title {
+        font-size: 16px;
+    }
+    .roadmap .mb-5 {
+        margin-bottom: 1rem !important;
+    }
+    .roadmap .gap-5 {
+        gap: 7px !important;
+    }
+    .orng-btn, .trn-btn{
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
