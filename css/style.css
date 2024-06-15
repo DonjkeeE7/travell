@@ -1,3 +1,10 @@
+:root {
+    --clr-orange: #f87932;
+    --clr-turquoise: #39BFA7;
+    --gap: 20px;
+    --wandh-img: 250px;
+}
+
 h4 {
     color: #F87932;
 }
@@ -18,9 +25,11 @@ header {
     padding-top: 0;
     padding-bottom: 20px;
 }
+
 .navbar-expand-lg .navbar-collapse {
     justify-content: center;
 }
+
 .bg-body-tertiary {
     --bs-bg-opacity: 0;
 }
@@ -216,6 +225,7 @@ header {
     top: -68px;
     right: 391px;
 }
+
 .videosec {
     background-image: url(../img/IMG_7207.gif);
     background-size: cover;
@@ -233,10 +243,12 @@ header {
     line-height: 66px;
     color: white;
 }
+
 .text-center {
     text-align: center !important;
     margin-top: 400px;
 }
+
 .videosec .container p {
     font-family: "Lato", sans-serif;
     font-weight: 700;
@@ -267,7 +279,7 @@ header {
     box-shadow: 0 0 10px 5px black;
 }
 
-.info-item:not(.inside) > p {
+.info-item:not(.inside)>p {
     text-align: center;
     font-size: 0.75rem;
 
@@ -293,15 +305,170 @@ header {
     outline: 2px solid #674631;
 }
 
-.info-item.inside > p {
+.info-item.inside>p {
     --scale: 1;
     transform: rotate(225deg);
     margin: 0;
 }
 
+.blog {
+    margin-top: 300px;
+}
 
+.blog h3 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: black;
+    font-size: 2.8rem;
+}
+
+.blog h4 {
+    font-size: 2rem;
+    color: #444444;
+}
+
+.blog p {
+    color: #666666;
+    font-size: 1rem;
+}
+
+.blog .text-center {
+    margin-top: 0px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
+
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+.photo-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.blog .img-1 {
+    grid-row: 1 / 3;
+    background-image: url(../img/photoblock1.png);
+    background-position: center;
+    height: calc(var(--wandh-img)* 2 + var(--gap));
+}
+
+.img {
+    background-size: cover;
+    height: var(--wandh-img);
+    width: var(--wandh-img);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gradient-hov-img {
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+    position: absolute;
+    width: 100%;
+    bottom: -100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 20px;
+    transition: .4s;
+}
+
+.img:hover .gradient-hov-img {
+    bottom: 0px;
+    transition: 0.8s;
+}
+
+.text-hov-img {
+    font-family: 'Merriweather';
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1.6rem;
+    letter-spacing: 0;
+}
+
+.strelka {
+    width: 40px;
+}
+
+.img-2 {
+    background-image: url(../img/photoblock2.png);
+}
+
+.img-3 {
+    background-image: url(../img/photoblock3.png);
+}
+
+.blog .img-4 {
+    grid-row: 1;
+    grid-column: 3 / 5;
+    background-image: url(../img/photoblock4.png);
+    width: calc(var(--wandh-img)* 2 + var(--gap));
+}
+
+.img-5 {
+    background-image: url(../img/photoblock5.png);
+}
+
+.img-6 {
+    background-image: url(../img/photoblock6.png);
+}
+
+.blog a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 213px;
+    height: 62px;
+    background-color: none;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid;
+    border-radius: 0;
+    position: relative;
+    transition: .4s;
+    margin-top: 20px;
+}
+
+.blog a:hover {
+    background-color: #f87b3200;
+}
+
+.blog a::before {
+    content: "";
+    display: block;
+    background: #F87932;
+    position: absolute;
+    z-index: -1;
+    transition: .4s;
+}
 
 @media (max-width: 1200px) {
+    :root {
+        --wandh-img: 230px;
+    }
+    .blog h3 {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        color: black;
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .blog h4 {
+        font-size: 2rem;
+        color: #444444;
+        text-align: center;
+    }
+
     .rhomb {
         width: 220px;
         height: 220px;
@@ -357,6 +524,10 @@ header {
 }
 
 @media (max-width: 992px) {
+    :root {
+        --wandh-img: 160px;
+    }
+
     .route {
         transform: scale(1);
         top: 129px;
@@ -393,6 +564,49 @@ header {
 }
 
 @media (max-width: 768px) {
+    :root {
+        --gap: 10px;
+    }
+
+    .photo-grid {
+        gap: var(--gap);
+    }
+
+    :root {
+        --wandh-img: 130px;
+    }
+
+    .img-2,
+    .img-3,
+    .img-5,
+    .img-6 {
+        width: 130px;
+        height: 130px;
+    }
+
+    .img-3,
+    .img-5,
+    .img-6 {
+        width: 130px;
+        height: 130px;
+    }
+
+    .text-hov-img {
+        font-family: 'Merriweather';
+        font-weight: 500;
+        color: #ffffff;
+        font-size: 0.8rem;
+        letter-spacing: 0;
+    }
+
+    .strelka {
+        width: 30px;
+    }
+
+    .gradient-hov-img {
+        padding: 10px;
+    }
+
     .route {
         display: none;
     }
@@ -457,9 +671,87 @@ header {
 }
 
 @media (max-width: 576px) {
-    .container{
+    .blog h3 {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        color: black;
+        font-size: 2.0rem;
+        text-align: center;
+    }
+
+    .blog h4 {
+        font-size: 1.3rem;
+        color: #444444;
+        text-align: center;
+    }
+
+    :root {
+        --gap: 5px;
+    }
+
+    .blog a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 40px;
+        background-color: none;
+        font-size: 12px;
+        font-weight: 700;
+        border: 2px solid;
+        border-radius: 0;
+        position: relative;
+        transition: .4s;
+        margin-top: 20px;
+    }
+
+    .photo-grid {
+        gap: var(--gap);
+    }
+
+    :root {
+        --wandh-img: 70px;
+    }
+
+    .img-2,
+    .img-3,
+    .img-5,
+    .img-6 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .img-3,
+    .img-5,
+    .img-6 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .gradient-hov-img {
+        padding: 5px;
+    }
+
+    .text-hov-img {
+        font-family: 'Merriweather';
+        font-weight: 500;
+        color: #ffffff;
+        font-size: 0.5rem;
+        letter-spacing: 0;
+    }
+
+    .strelka {
+        width: 15px;
+    }
+
+    .news .text-center {
+        font-size: 12px;
+    }
+
+    .container {
         overflow: hidden;
     }
+
     .adventure .container .maintext {
         font-size: 10px;
         margin-bottom: 162px;
