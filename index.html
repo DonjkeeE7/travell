@@ -32,14 +32,14 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav justify-content-center">
+                    <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#презент">
                                 <h5 class="lato-bold">Presents</h5>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#адвентуре">
                                 <h5 class="lato-bold">Advantages</h5>
                             </a>
                         </li>
@@ -48,12 +48,12 @@
                                     src="./img/name.png"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#блог">
                                 <h5 class="lato-bold">Blog</h5>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#турист">
                                 <h5 class="lato-bold">Schedule</h5>
                             </a>
                         </li>
@@ -61,6 +61,43 @@
                 </div>
             </div>
         </nav>
+        <section class="head">
+            <div class="container">
+                <div class="grid1">
+                    <h1 class="">Traveling in <br>
+                        <span class="orange">Cyprus</span>
+                    </h1>
+                    <button class="orng-btn">BOOK A TRIP <span class="in-btn"></span></button>
+                </div>
+                <div class="rhombiki">
+                    <img src="./img/rhomb6.jpg">
+                </div>
+                <div class="rhombiki">
+                    <img src="./img/rhomb5.jpg">
+                </div>
+                <div class="rhombiki">
+                    <img src="./img/rhomb7.jpg">
+                </div>
+                <div class="rhombiki">
+                    <img src="./img/rhomb8.jpg">
+                </div>
+                <div class="rhombiki">
+                    <img src="./img/rhomb9.jpg">
+                </div>
+                <div class="rhombiki">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/rhomb1.jpg" class="" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/rhomb2.jpg" class="" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <section class="adventure">
         <div class="container">
@@ -247,7 +284,7 @@
     </section>
     <section class="feedback">
         <div class="container d-flex flex-column justify-content-center align-items-center mb-50">
-            <h3 class="mb-2">Blog about our travels</h3>
+            <h3 class="mb-2">Join to new Journey</h3>
             <img class="my-3" src="./img/rombs-ways.png" alt="">
             <p class="text-center">Call to us to register your trip</p>
         </div>
@@ -255,33 +292,50 @@
             <div class="container">
                 <div class="col-xl-8 col-md-6 mb-4">
                     <label for="formName" class="form-label">
-                        <p>Имя</p>
+                        <p>Name</p>
                     </label>
                     <input class="form-control" id="formName" required>
                 </div>
                 <div class="col-xl-8 col-md-6 mb-4">
                     <label for="formSurname" class="form-label">
-                        <p>Фамилия</p>
+                        <p>Surname</p>
                     </label>
                     <input class="form-control" id="formSurname" required>
                 </div>
                 <div class="col-xl-8 col-md-6 mb-4">
+                    <select class="form-select" id="formCountry" required="">
+                        <option selected="" value="" disabled="">Country</option>
+                        <option value="Russia">Russia</option>
+                        <option value="USA">USA</option>
+                        <option value="SPAIN">Spain</option>
+                    </select>
+                </div>
+                <div class="col-xl-8 col-md-6 mb-4">
                     <label for="exampleInputEmail1" class="form-label">
-                        <p>Адрес электронной почты</p>
+                        <p>Telephone Number</p>
+                    </label>
+                    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        required>
+                </div>
+                <div class="col-xl-8 col-md-6 mb-4">
+                    <label for="exampleInputEmail1" class="form-label">
+                        <p>E-mail</p>
                     </label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                         required>
                 </div>
                 <div class="col-xl-8 col-md-6 mb-4">
-                    <label for="exampleInputEmail1" class="form-label">
-                        <p>Номер телефона</p>
-                    </label>
-                    <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        required>
+                    <label for="formDate"><p>Arrival Date</p></label>
+                    <input class="form-control" id="formDate" type="date" required="">
+                </div>
+                <div class="col-xl-8 col-md-6 mb-4">
+                    <label for="formCount"><p>Count of Tripper</p></label>
+                    <input class="form-control" id="formCount" type="number" required="">
                 </div>
 
+
                 <div class="col-xl-8 col-md-6 mb-4" style="display: flex; justify-content: center;">
-                    <button type="button" class="btn btn-light">Оставить заявку</button>
+                    <button type="submit" class="btn btn-light">Get a Trip</button>
                 </div>
             </div>
         </form>
