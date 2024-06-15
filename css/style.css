@@ -611,6 +611,99 @@ svg {
     margin-top: 0px;
 }
 
+
+.feedback .text-center {
+    margin-top: 0px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+}
+
+form .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback {
+    background-color: #37404e;
+}
+
+.feedback .container h3 {
+    margin-top: 100px;
+    font-family: "Merriweather", serif;
+    font-size: 3.75rem;
+    font-weight: 900;
+    color: white;
+}
+
+.feedback .container p {
+    margin-bottom: 0;
+    color: white;
+}
+.feedback .text-center {
+    margin-bottom: 50px !important;
+}
+footer {
+    background-color: #151C21;
+}
+
+footer .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer .container h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    color: white;
+}
+
+footer .container p {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.footer2 {
+    background-color: #151C21;
+}
+
+.footer2 .container {
+    border-top: 2px solid #414141;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer2 .container .copyright {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #BBBBBB;
+}
+
+.footer2 .container .privacy {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    color: #BBBBBB;
+}
+.footer2 .text-center {
+    text-align: center !important;
+    margin-top: 0px;
+}
+
 @media (max-width: 1200px) {
     :root {
         --wandh-img: 230px;
@@ -720,9 +813,18 @@ svg {
     .trn-btn {
         margin-top: 0px;
     }
+    .feedback .text-center {
+        margin-bottom: 30px !important;
+    }
+    footer .container .logo {
+        display: flex;
+        height: 200px;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 992px) {
+    
     :root {
         --wandh-img: 160px;
     }
@@ -776,10 +878,12 @@ svg {
     .roadmap .container .rightsite .number p {
         font-size: 65px;
     }
+
     .roadmap .container p {
         font-size: 12px;
         width: 100%;
     }
+
     .roadmap .container h2 {
         font-size: 55px;
     }
@@ -894,17 +998,29 @@ svg {
     .adventure {
         margin-bottom: 100px;
     }
+
     .roadmap .container h2 {
         font-size: 30px;
     }
+
     .roadmap {
         padding: 70px;
     }
+
     .roadmap .container .rightsite .itd .title {
         font-size: 28px;
     }
+
     .roadmap .container .rightsite .number p {
         font-size: 55px;
+    }
+    .feedback .container h3 {
+        font-size: 3.05rem;
+    }
+    .feedback .text-center {
+        font-size: 0.7rem;
+        letter-spacing: 0.20rem;
+        margin-bottom: 30px !important;
     }
 
 }
@@ -1047,38 +1163,49 @@ svg {
         width: auto;
         height: 155px;
     }
+
     .roadmap {
         padding: 25px;
     }
+
     .highway .container p {
         font-size: 12px;
         width: 124%;
         line-height: 12px;
     }
+
     .roadmap .container h2 {
         font-size: 29px;
         font-weight: 700;
     }
+
     .roadmap .container .leftsite h2 {
         font-size: 40px;
         text-align: center;
     }
+
     .roadmap .container .rightsite .number p {
         font-size: 40px;
     }
+
     .roadmap .container .rightsite .itd .month {
         font-size: 14px;
     }
+
     .roadmap .container .rightsite .itd .title {
         font-size: 16px;
     }
+
     .roadmap .mb-5 {
         margin-bottom: 1rem !important;
     }
+
     .roadmap .gap-5 {
         gap: 7px !important;
     }
-    .orng-btn, .trn-btn{
+
+    .orng-btn,
+    .trn-btn {
         width: 150px;
         height: 40px;
         font-size: 12px;
@@ -1087,5 +1214,12 @@ svg {
         justify-content: center;
         align-items: center;
     }
-    
+    .feedback .container h3 {
+        font-size: 1.8rem;
+    }
+    footer .container span {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
 }
